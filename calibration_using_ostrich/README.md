@@ -309,4 +309,3 @@ Key sources:
 2. Ostrich: https://www.civil.uwaterloo.ca/envmodelling/Ostrich.html
 3. Cargo: https://doc.rust-lang.org/cargo/getting-started/installation.html
 4. Nix https://github.com/nix-community/nix-user-chroot
-5. 
