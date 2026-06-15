@@ -11,10 +11,10 @@
 #SBATCH --account=account_name_in_jasmin
 #SBATCH --time=23:59:00
 #SBATCH --job-name=ostrich
-#SBATCH --mail-user=ignacio.aguirre@ucalgary.ca
+#SBATCH --mail-user=user@company.ca
 #SBATCH --mail-type=ALL
-#SBATCH --output=/work/scratch-pw4/iaguirre/plumber_running/logs/slurm-output/slurm-%A_%a.out
-#SBATCH --error=/work/scratch-pw4/iaguirre/plumber_running/logs/slurm-error/slurm-%A_%a.out
+#SBATCH --output=./logs/slurm-output/slurm-%A_%a.out
+#SBATCH --error=./logs/slurm-error/slurm-%A_%a.out
 
 # to test scripts debug debug 
 # then standard and high
