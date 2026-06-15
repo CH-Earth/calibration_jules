@@ -62,7 +62,7 @@ export NETCDF_FORTRAN_ROOT=/apps/jasmin/supported/libs/netcdf/intel2024.2.0/fort
 module unload jaspy
 source ~/miniforge3/bin/activate
 eval "$(mamba shell hook --shell bash)"
-mamba activate /home/users/iaguirre/python-envs/conda/pl2_jules_v2
+mamba activate /home/users/$USER/python-envs/conda/jules_calib
 
 export PYTHONNOUSERSITE=1
 unset PYTHONPATH

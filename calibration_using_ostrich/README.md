@@ -50,7 +50,7 @@ source ~/miniforge3/bin/activate
 ### 5. Create the new environment 
 
 ```
-conda create --name newenv --file python/packages.txt
+conda create --name jules_calib --file python/packages.txt
 ```
 >> Note: The file is provided on documentation/installs/python 
 

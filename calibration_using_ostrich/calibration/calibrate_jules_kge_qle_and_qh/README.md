@@ -38,7 +38,7 @@ Also, remember to check the sbatch lines.
 You can leave the ram, nodes, and tasks fixed, but the account, email, and path for the output and errors files must be modified. 
 
 ```
-#SBATCH --nodes=1 
+#SBATCH --nodes=1
 #SBATCH --ntasks=10
 #SBATCH --partition=standard
 #SBATCH --qos=high
@@ -47,10 +47,10 @@ You can leave the ram, nodes, and tasks fixed, but the account, email, and path 
 #SBATCH --account=account_name_in_jasmin
 #SBATCH --time=23:59:00
 #SBATCH --job-name=ostrich
-#SBATCH --mail-user=ignacio.aguirre@ucalgary.ca
+#SBATCH --mail-user=user@company.ca
 #SBATCH --mail-type=ALL
-#SBATCH --output=/work/scratch-pw4/iaguirre/plumber_running/logs/slurm-output/slurm-%A_%a.out
-#SBATCH --error=/work/scratch-pw4/iaguirre/plumber_running/logs/slurm-error/slurm-%A_%a.out
+#SBATCH --output=./logs/slurm-output/slurm-%A_%a.out
+#SBATCH --error=./logs/slurm-error/slurm-%A_%a.out
 
 ```
 
