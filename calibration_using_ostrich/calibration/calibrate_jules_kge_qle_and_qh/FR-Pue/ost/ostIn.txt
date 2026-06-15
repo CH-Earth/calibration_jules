@@ -1,0 +1,102 @@
+#ProgramType  ParaPADDS
+#ProgramType  ParallelDDS
+#ProgramType  APPSO
+#ProgramType  ModelEvaluation
+ProgramType   GeneticAlgorithm
+ObjectiveFunction  GCOP
+RandomSeed 2074303
+ModelExecutable  ./ost_jules.sh
+ModelSubdir Processor_
+
+BeginFilePairs
+    calibration_parameters.tpl ; calibration_parameters.txt
+EndFilePairs
+
+BeginParams
+    # name                      init       lower       upper       txIn     txOst    txOut    format
+    # ------------- JULES parameters -----------------------------
+_b_	random	2.0	15.0	none	none	E15.8
+_sm_sat_    random	0.3	0.70	none	none	E15.8
+_sathh_	random	0.01	1.5	none	log10	E15.8
+_satcon_	random	0.0005	0.02	log10	none	E15.8
+_sm_crit_	random	1.0	1.0	none	none	E15.8 
+_sm_wilt_	random	1.0	1.0	none	none	E15.8
+_hcap_	random	1000000	1500000	none	none	E15.8
+_hcon_	random	0.1	0.5	none	none	E15.8
+_tupp_io_	random	0.69	1.14	none	none	E15.8
+_tlow_io_	random	0.9 1.1 none	none	E15.8
+_omega_io_	random	0.5	2.0	none	none	E15.8
+_alpar_io_	random	0.5	2.0	none	none	E15.8
+_alnir_io_	random	0.5	2.0	none	none	E15.8
+_n_lai_exposed_	random	0.5	2.0	none	none	E15.8
+_neff_io_	random	0.5	2.0	none	none	E15.8
+_nl0_io_	random	0.5	2.0	none	none	E15.8
+_alpha_io_	random	0.5	2.0	none	none	E15.8
+_f0_io_	random	0.074	1.11	none	none	E15.8
+_dqcrit_io_	random	0.5	2.0	none	none	E15.8
+_z0hm_pft_io_	random	0.01	2.0	none	none	E15.8
+_dcatch_dlai_io_	random	0.001	1.0	none	none	E15.8
+_catch0_io_	random	0.001	1.0	none	none	E15.8
+_rootd_ft_io_	random	0.001	3.0	none	none	E15.8
+EndParams
+
+BeginTiedParams
+EndTiedParams
+
+#BeginInitParams
+#1.63992E-06	0.3961483	8.680917	0.02792614	50.87043	1.392242	2.192042	43.79864	0.01025991	272.1852	0.954918	1.041962	2.305665	207238.1	6.474366	8978.581	0.7501992	5.742172	531898.4	0.4060825	1.820386	5.845267	0.003636545	0.0285066
+#EndInitParams
+
+
+BeginResponseVars
+    #name	         filename		keyword		    line	col	token	augment?
+    KGE          flow_stats.txt ;     OST_NULL        0       2      ' '	yes
+    VAL          flow_stats.txt ;     OST_NULL        3       2      ' '	yes
+    QLC          flow_stats.txt ;     OST_NULL        4       2      ' '	yes
+    QLE          flow_stats.txt ;     OST_NULL        5       2      ' '	yes
+    QHC          flow_stats.txt ;     OST_NULL        6       2      ' '	yes
+    QHE          flow_stats.txt ;     OST_NULL        7       2      ' '	yes
+    LHC          flow_stats.txt ;     OST_NULL        8       2      ' '	yes
+    LHE          flow_stats.txt ;     OST_NULL        9       2      ' '	yes
+EndResponseVars
+
+BeginTiedRespVars
+    NEGKGE 1 KGE wsum -1.00
+EndTiedRespVars
+
+BeginGCOP
+    CostFunction NEGKGE
+    PenaltyFunction APM
+EndGCOP
+
+
+BeginParallelDDSAlg
+    PerturbationValue 0.2
+    MaxIterations 5
+EndParallelDDSAlg
+
+BeginAPPSO
+    SwarmSize 100
+    NumGenerations 75
+    ConstrictionFactor 1.00
+    CognitiveParam 2.00
+    SocialParam 2.00
+    InertiaWeight 1.20
+    InertiaReductionRate 0.10
+EndAPPSO
+
+BeginGeneticAlg
+    ParallelMethod asynchronous
+    PopulationSize 80
+    MutationRate 0.1
+    Survivors 5
+    NumGenerations 32
+    InitPopulationMethod LatinHypercube
+    ConvergenceVal 1.00E-4
+EndGeneticAlg
+
+#BeginParaPADDS
+    #MaxIterations 400
+    #PerturbationValue 0.2
+    #SelectionMetric Random
+#EndParaPADDS

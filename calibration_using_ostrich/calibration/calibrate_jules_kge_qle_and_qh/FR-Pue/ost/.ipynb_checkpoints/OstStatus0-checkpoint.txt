@@ -1,0 +1,5 @@
+CurrentIteration : 5163
+MaximumIterations : 5000
+PercentComplete : 100.000000
+ElapsedTime : 1796
+ModelRuns : 1

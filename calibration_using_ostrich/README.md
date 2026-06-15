@@ -6,7 +6,7 @@
 2. Portable Jules ([https://github.com/NERC-CEH/portable-jules](https://github.com/NERC-CEH/portable-jules))
 
 
-# Instalation
+# Installation
 
 
 ## Python 

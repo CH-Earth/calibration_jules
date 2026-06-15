@@ -1,0 +1,51 @@
+**ERROR** NUMBER OF COMPLEXES IN INITIAL POPULATION (0) IS NOT A VALID CHOICE
+**WARNING** THE MINIMUM NUMBER OF COMPLEXES (0) IS NOT A VALID CHOICE. SET IT TO DEFAULT 
+*** TOTAL NUMBER OF ERROR MESSAGES IS 1
+*** TOTAL NUMBER OF WARNING MESSAGES IS 1
+  SCE CONTROL     MAX TRIALS     REQUIRED IMPROVEMENT     RANDOM
+   PARAMETER        ALLOWED      PERCENT    NO. LOOPS      SEED
+  -----------     ----------     -------    ---------     ------
+  DEFAULT         538976288         0.00    0             1969  
+
+
+                  SCE ALGORITHM CONTROL PARAMETERS
+                  ================================
+
+  NUMBER OF     POINTS PER     POINTS IN      POINTS PER    EVOL. STEPS
+  COMPLEXES      COMPLEX      INI. POPUL.     SUB-COMPLX    PER COMPLEX
+  ---------     ----------    -----------     ----------    -----------
+  0             37            0               19            37         
+
+
+               COMPLX NO.     MIN COMPLEX     INI. POINT
+               REDUCTION      NO. ALLOWED      INCLUDED
+               ----------     -----------     ----------
+               NO             0               YES       
+
+
+        INITIAL PARAMETER VALUES AND PARAMETER BOUNDS
+        =============================================
+
+  PARAMETER     INITIAL VALUE     LOWER BOUND     UPPER BOUND
+  ---------     -------------     -----------     -----------
+  _k_soil_              0.000           0.000           0.000
+  _theta_sa             0.384           0.314           0.600
+  _aquiferBܫQ             2.000           1.000          10.000
+  _aquiferBܫQ             0.100           0.000           0.100
+  _qSurfScaܫQ            50.000           1.000         100.000
+  _summerLAܫQ             3.000           0.010          10.000
+  _frozenPrܫQ             1.000           0.500           1.500
+  _heightCaܫQ             0.100           0.000           5.000
+  _heightCaܫQ            10.000           0.300          50.000
+  _Fcapil_              0.060           0.010           0.100
+  _tempCritܫQ           273.160         272.160         274.160
+  _windReduܫQ             0.280           0.000           1.000
+  _vGn_n_               1.330           1.000           3.000
+  _k_macropܫQ             0.001           0.000           0.100
+  _theta_mpܫQ             0.401           0.300           0.600
+  _routingGܫQ             2.589           2.000           3.000
+  _routingGܫQ         97568.325       86400.000      400000.000
+  _zScale_TܫQ            97.467           1.000         100.000
+
+
+*** THE OPTIMIZATION SEARCH IS NOT CONDUCTED BECAUSE OF INPUT DATA ERROR ***

@@ -1,0 +1,5 @@
+Ostrich Error Report for Processor 0 
+A total of 3 errors and/or warnings were reported
+FILE I/O ERROR             : No constraints specified. 
+FILE I/O ERROR             : Parameter |_theta_mp_| not found in any template file 
+FILE I/O ERROR             : Unknown token: MinNumberOfCOmplexes 3 

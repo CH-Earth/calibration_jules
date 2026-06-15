@@ -1,0 +1,41 @@
+--------------------------------------------------------------------------
+ OSTRICH version 24.09.07 (Built Sep  7 2024 @ 09:12:16)
+
+ A computer program for model-independent calibration and optimization.
+
+ Author             L. Shawn Matott
+ Copyright (C) 2007 L. Shawn Matott
+
+ This program is free software; you can redistribute 
+ it and/or modify it under the terms of the GNU  
+ General Public License as published by the Free 
+ Software Foundation; either version 2 of the 
+ License, or(at your option) any later version. 
+
+ This program is distributed in the hope that it will 
+ be useful, but WITHOUT ANY WARRANTY; without even 
+ the implied warranty of MERCHANTABILITY or FITNESS 
+ FOR A PARTICULAR PURPOSE. See the GNU General Public 
+ License for more details. 
+
+ You should have received a copy of the GNU General 
+ Public License along with this program; if not, 
+ write to the Free Software Foundation, Inc., 59 
+ Temple Place, Suite 330, Boston, MA 02111-1307 USA 
+--------------------------------------------------------------------------
+
+Ostrich Setup
+Model                  : ./ost_summa.sh > OstExeOut.txt 2>&1
+Algorithm              : Shuffled Complex Evolution - University of Arizona
+Objective Function     : GCOP
+Number of Parameters   : 18
+Number of Tied Params  : 0
+Number of Observations : 0
+Seed for Random Nums.  : 123456789
+Number of Resp. Vars        : 1
+Number of Tied Resp. Vars   : 1
+Number of Constraints       : 0
+Penalty Method              : Additive Penalty Method (APM)
+
+Ostrich Run Record
+gen   best value     KGE           _k_soil_      _theta_sat_   _aquiferBaseflowExp_  _aquiferBaseflowRate_  _qSurfScale_  _summerLAI_   _frozenPrecipMultip_  _heightCanopyBottom_  _heightCanopyTop_  _Fcapil_      _tempCritRain_  _windReductionParam_  _vGn_n_       _k_macropore_  _theta_mp_    _routingGammaShape_  _routingGammaScale_  _zScale_TOPMODEL_  Pct. Complete

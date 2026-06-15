@@ -1,0 +1,16 @@
+&jules_surface
+all_tiles=1,
+beta_cnv_bl=0.04,
+cor_mo_iter=4,
+iscrntdiag=0,
+l_aggregate=.false.,
+l_anthrop_heat_src=.false.,
+l_elev_land_ice=.false.,
+l_elev_lw_down=.false.,
+l_epot_corr=.true.,
+l_flake_model=.true.,
+l_land_ice_imp=.true.,
+l_mo_buoyancy_calc=.true.,
+l_point_data=.true.,
+l_urban2t=.true.,
+/

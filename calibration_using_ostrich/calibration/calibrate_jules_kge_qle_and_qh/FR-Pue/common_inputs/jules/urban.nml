@@ -1,0 +1,9 @@
+&jules_urban
+l_moruses_albedo=.true.,
+l_moruses_emissivity=.true.,
+l_moruses_macdonald=.true.,
+l_moruses_rough=.true.,
+l_moruses_storage=.true.,
+l_moruses_storage_thin=.true.,
+l_urban_empirical=.true.,
+/

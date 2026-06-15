@@ -1,0 +1,19 @@
+&jules_time
+l_360=.false.,
+l_leap=.true.,
+l_local_solar_time=.true.,
+main_run_end='2015-01-01 00:00:00',
+main_run_start='2000-01-01 00:00:00',
+print_step=1,
+timestep_len=1800,
+/
+&jules_spinup
+max_spinup_cycles=1,
+nvars=2,
+spinup_end='2015-01-01 00:00:00',
+spinup_start='2000-01-01 00:00:00',
+terminate_on_spinup_fail=.false.,
+tolerance=1.0,0.1,
+use_percent=.false.,.true.,
+var='smcl','t_soil',
+/

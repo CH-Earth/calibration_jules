@@ -1,0 +1,16 @@
+&jules_prescribed
+n_datasets=1,
+/
+&jules_prescribed_dataset
+data_end='2015-01-01 00:00:00',
+data_period=1800,
+data_start='2000-01-01 00:00:00',
+file='FR-Pue_lai_pft.nc',
+interp='nf',
+is_climatology=.false.,
+nvars=1,
+read_list=.false.,
+tpl_name='',
+var='lai',
+var_name='lai_pft',
+/
